@@ -1,10 +1,8 @@
+import { instruction } from "./Datos/data.js";
 function compilator() {
-  const message =
-    "&###@&*&###@@##@##&######@@#####@#@#@#@##@@@@@@@@@@@@@@@*&&@@@@@@@@@####@@@@@@@@@#########&#&##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@##@@&";
-
   let cont = 0;
   let response = "";
-  const chartsMessaje = message.split("");
+  const chartsMessaje = instruction.split("");
   chartsMessaje.forEach((chart) => {
     switch (chart) {
       case "#": cont++; break;
